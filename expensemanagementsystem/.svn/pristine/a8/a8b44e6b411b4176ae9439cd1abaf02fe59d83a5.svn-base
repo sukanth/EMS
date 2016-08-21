@@ -1,0 +1,14 @@
+package com.room.EMS.util;
+
+import javax.servlet.http.HttpSession;
+
+public class EmsUtil {
+public boolean isValidSession(HttpSession session)
+{
+	if(session.getAttribute("username")!=null && ! session.getAttribute("username").equals(""))
+	return true;
+	else
+	return false;
+}
+
+}
